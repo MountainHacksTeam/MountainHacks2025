@@ -1,0 +1,63 @@
+[
+    {
+        "name": "Akshat Sehgal",
+        "role": "LEAD\nLogistics/Dev/Marketing",
+        "desc": "to update desc",
+        "img": "./data/assets/organizers/akshat.JPG",
+        "socials": {
+            "instagram": "https://instagram.com/the_akze",
+            "github": "https://github.com/the-akze",
+            "youtube": "https://www.youtube.com/@the_akze",
+            "linkedin": "https://www.linkedin.com/in/akshat-sehgal-602379260/",
+            "twitter": "https://twitter.com/the_Akze"
+        }
+    },
+    {
+        "name": "Yashmit Bhaverisetti",
+        "role": "LEAD\nLogistics/Finance",
+        "desc": "",
+        "img": "./data/assets/organizers/yashmit.jpg",
+        "socials": {
+            "instagram": "https://www.instagram.com/yashmit.bhaverisetti/",
+            "github": "https://github.com/yashmitb",
+            "linkedin": "https://www.linkedin.com/in/yashmit-bhaverisetti-77b211261/"
+        }
+    },
+    {
+        "name": "Dhruv Jena",
+        "role": "LEAD\nLogistics/Finance",
+        "desc": "",
+        "img": "./data/assets/organizers/dhruv.jpg",
+        "socials": {
+            "github": "https://github.com/TheDhruvJena",
+            "linkedin": "https://www.linkedin.com/in/dhruv-jena/"
+        }
+    },
+    {
+        "name": "Ritvick Raghuvanshi",
+        "role": "LEAD\nLogistics/Finance",
+        "desc": "",
+        "img": "./data/assets/organizers/ritvick.jpeg",
+        "socials": {
+            "instagram": "https://www.instagram.com/ritvick.r",
+            "github": "https://github.com/Ritvick4U",
+            "linkedin": "https://www.linkedin.com/in/ritvick-raghuvanshi-5a6300264"
+        }
+    },
+    {
+        "name": "Ishita Ahelleya",
+        "role": "Finance",
+        "desc": "",
+        "img": "./data/assets/organizers/ishita.jpg",
+        "socials": {
+            "instagram": "https://www.instagram.com/ishda_25/"
+        }
+    },
+    {
+        "name": "etc",
+        "role": "??",
+        "desc": "??",
+        "socials": {
+        }
+    }
+]

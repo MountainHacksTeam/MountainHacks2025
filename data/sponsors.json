@@ -1,0 +1,13 @@
+[
+    {
+        "name": "HCB",
+        "desc": "MountainHacks is fiscally sponsored by HackClub!",
+        "img": "./data/assets/sponsors/hcb.png",
+        "url": "https://hackclub.com/fiscal-sponsorship/"
+    },
+    {
+        "name": "etc",
+        "img": "",
+        "url": ""
+    }
+]

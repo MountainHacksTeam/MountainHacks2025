@@ -2,11 +2,22 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <!--TODO: do google analytics setup
+    <script async src="https://www.googletagmanager.com/gtag/js?id=???"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '');
+    </script>-->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css"/>
 
-    <link rel="icon" href="./assets/icons/mountain_hacks_favicon.png" />
+    <link rel="icon" href="assets/icons/mountain_hacks_favicon.png" />
 
     <link href="https://fonts.googleapis.com/css?family=Space Grotesk" rel="stylesheet">
 
@@ -15,15 +26,344 @@
 
     <title>MountainHacks 2025</title>
 
+    <base href="./">
 </head>
 
 <body>
-    <h1>
-        MountainHacks 2025
-    </h1>
-    <p>
-        Sample text
-    </p>
+    <div class="top-bar">
+        <a class="top-bar-title" href="./">
+            <h1>
+                <span id="tbt-mountain">MOUNTAIN</span>
+                <span id="tbt-hacks">HACKS</span>
+            </h1>
+        </a>
+        <div class="top-bar-right">
+            <div class="top-bar-link-container">
+                <a class="top-bar-link" href="slack.html" target="_blank">
+                    <ion-icon name="logo-slack"></ion-icon>
+                    <p>&nbsp;SLACK</p>
+                </a>
+                <a class="top-bar-link" onclick="scrollToSection('sponsors')">
+                    <p>SPONSOR US</p>
+                </a>
+                <a class="top-bar-link" href="register">
+                    <p>
+                        REGISTER
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="banner">
+            <div class="banner-content">
+                <img class="banner-logo" src="assets/img/mountainhacks_2025(web).png"/>
+                <div class="banner-info-card-container desc-font">
+                    <div class="flex-row">
+                        <a class="banner-info-card" href="" target="_blank">
+                            <ion-icon name="calendar"></ion-icon>
+                            <h2>
+                                April 5, 2025
+                            </h2>
+                        </a>
+                        <a class="banner-info-card" href="maps.html" target="_blank">
+                            <ion-icon name="location"></ion-icon>
+                            <h2>
+                                Mountain House High School
+                            </h2>
+                        </a>
+                    </div>
+                    <div class="flex-row">
+                        <a class="banner-info-card" href="slack.html" target="_blank">
+                            <ion-icon name="logo-slack"></ion-icon>
+                            <h2>
+                                Slack
+                            </h2>
+                        </a>
+                        <a class="banner-info-card" href="devpost.html" target="_blank">
+                            <ion-icon name="code-slash"></ion-icon>
+                            <h2>
+                                Devpost
+                            </h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="banner-quick-links-container desc-font">
+                    <!-- <a target="_blank" class="banner-quick-link button fancy-btn big-btn" id="banner-sign-up-btn" disabled>
+                        <h1>SIGN UP</h1>
+                        <p>OPENS VERY SOON!</p>
+                    </a> -->
+                    <a target="_blank" class="banner-quick-link button fancy-btn big-btn" id="banner-sign-up-btn" href="/register" disabled>
+                        <h1 class="center-text no-margin">SIGN UP<br><span style="font-size: 50%;">COMING SOON...</span></h1>
+                    </a>
+                </div>
+            </div>
+            <div class="banner-bg-effect banner-bg-img" style="background-image: url(./assets/img/mountains_abstract.png);"></div>
+            <div class="banner-bg-effect" id="stars-canvas-container">
+                <canvas width="100%" height="100%" id="stars-canvas"></canvas>
+            </div>
+            <div class="banner-bg-effect" id="down-arrow-container">
+                <h1 id="down-arrow-effect" onclick="scrollToContent()">↓</h1>
+            </div>
+        </div>
+        <div class="socials-container">
+            <a class="social gh" href="https://github.com/mountainHacksTeam" target="_blank"></a>
+            <a class="social ig" href="https://www.instagram.com/mountain.hacks/" target="_blank"></a>
+            <a class="social yt" href="https://www.youtube.com/@mountainhacks" target="_blank"></a>
+        </div>
+        <div class="page-content">
+            <div class="section banner" data-section="hook">
+                <div class="banner-content">
+                    <h1 class="section-title center-text desc-font">THE THIRD YEAR OF MOUNTAIN HACKS</h1>
+                    <div class="big-num-container desc-font">
+                        <div class="big-num-card">
+                            <h1>
+                                <span class="big-num-anim">99999</span>bajillion
+                            </h1>
+                            <p class="section-description">HACKERS</p>
+                        </div>
+                        <div class="big-num-card">
+                            <h1>
+                                <span class="big-num-anim">99999</span>
+                            </h1>
+                            <p class="section-description">HOUR HACKATHON</p>
+                        </div>
+                        <div class="big-num-card">
+                            <h1>
+                                $<span class="big-num-anim">99999</span>trillion
+                            </h1>
+                            <p class="section-description">IN PRIZES</p>
+                        </div>
+                        <br>
+                        <!-- <div class="big-num-card">
+                            <h1>
+                                $TBD
+                            </h1>
+                            <p class="section-description">IN DEV TOOLS</p>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="banner-bg-effect banner-bg-img faint" style="background-image: url(./assets/camera/group_pic_2024.jpg);"></div>
+            </div>
+
+            <div class="section">
+                <h1 class="section-title center-text">
+                    ABOUT
+                </h1>
+                <p class="center-text">
+                    A 14-hour hackathon for high-school students taking place on April 5, 2025 at Mountain House High School!
+                </p>
+                <div class="cards-container">
+                    <div class="card">
+                        <h2 class="section-title desc-font">
+                            WHO?
+                        </h2>
+                        <p>
+                            Open to all high-school students grades
+                            9-12, and to all experience levels!
+                            Whether you're a beginner or advanced,
+                            you're invited to MountainHacks 2025.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h2 class="section-title desc-font">
+                            WHAT?
+                        </h2>
+                        <p>
+                            An in-person hackathon with tons of cool
+                            stuff: food, swag (merch), workshops,
+                            prizes, and dev tools for ALL hackers!
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h2 class="section-title desc-font">
+                            WHY?
+                        </h2>
+                        <p>
+                            Whether you're looking to learn new coding
+                            skills or build revolutionary apps and win
+                            prizes, MountainHacks 2025 is for YOU! We'll
+                            have developer tools, opportunities, and
+                            workshops for everyone.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h2 class="section-title desc-font">
+                            WHEN?
+                        </h2>
+                        <p>
+                            MountainHacks 2025 will be taking place on April 5, 2025 the whole day.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-section="sponsors">
+                <h1 class="section-title center-text">
+                    SPONSORS
+                </h1>
+                <p class="center-text">
+                    Sponsors make MountainHacks possible!
+                </p>
+                <h3 class="center-text">
+                    To sponsor MountainHacks, please contact the email at the bottom of the page.
+                    <br>
+                    Sponsoring us will help the hackathon run a lot smoother, and give us a lot more to offer to hackers!
+                </h3>
+                <div class="sponsor-section-container center-flex">
+                    <div class="cards-container sponsor" data-sponsor-type="">
+                        <noscript>
+                            <h1>
+                                Please enable JavaScript.
+                            </h1>
+                        </noscript>
+                        <a class="card sponsor template" target="_blank">
+                            <img src=""/>
+                            <p class="sponsor-name">name</p>
+                            <p class="sponsor-desc">desc</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h1 class="section-title center-text">
+                    ORGANIZERS
+                </h1>
+                <p class="center-text">
+                    Meet the people organizing MountainHacks!
+                </p>
+                <div class="cards-container person">
+                    <noscript>
+                        <h1>
+                            Please enable JavaScript.
+                        </h1>
+                    </noscript>
+                    <div class="card person template">
+                        <div class="card-section">
+                            <h1 class="section-title center-text">
+                                <noscript>Enable JS</noscript>
+                            </h1>
+                            <h2 class="section-subtitle center-text">
+                                <noscript>Enable JS</noscript>
+                            </h2>
+                            <p class="desc">
+                                <noscript>Please enable JavaScript.</noscript>
+                            </p>
+                        </div>
+                        <div class="card-section">
+                            <img src=""/>
+                            <div class="socials">
+                                <a class="instagram" style="display: none;" href="https://instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                                <a class="github" style="display: none;" href="https://github.com" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                                <a class="youtube" style="display: none;" href="https://youtube.com" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                                <a class="linkedin" style="display: none;" href="https://linkedin.com" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                                <a class="twitter" style="display: none;" href="https://twitter.com" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h1 class="section-title center-text">
+                    FAQ
+                </h1>
+                <p class="center-text">
+                    Frequently asked questions...
+                </p>
+                <div class="faq what-is-mountainhacks">
+                    <div class="faq-btn" onclick="scrollToContent()">
+                        <h3 class="faq-question">
+                            What is MountainHacks?
+                        </h3>
+                    </div>
+                    <div class="faq-dropdown">
+                        <p class="faq-answer">
+                            ...
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-container">
+                    <noscript>
+                        <h1>
+                            Please enable JavaScript.
+                        </h1>
+                    </noscript>
+                    <div class="faq template">
+                        <div class="faq-btn" onclick="this.parentNode.classList.toggle('open')">
+                            <h3 class="faq-question">
+                                Question
+                            </h3>
+                        </div>
+                        <div class="faq-dropdown">
+                            <p class="faq-answer">
+                                Answer
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="center-text">
+                    Contact the email at the bottom of the page for more questions!
+                </h3>
+            </div>
+
+            <div class="section">
+                <h1 class="section-title">Check out past years!</h1>
+            </div>
+
+            <div class="section banner">
+                <br>
+                <br>
+                <br>
+                <h1 class="section-title center-text desc-font">
+                    <a class="link" href="https://mountainhacksteam.github.io/MountainHacks2024" target="_blank">2024</a>
+                    <br>
+                </h1>
+                <div class="banner-bg-effect banner-bg-img faint" style="background-image: url(./assets/camera/group_pic_2024.jpg);"></div>
+                <br>
+                <br>
+                <br>
+            </div>
+
+            <div class="section banner">
+                <br>
+                <br>
+                <br>
+                <h1 class="section-title center-text desc-font">
+                    <a class="link" href="https://mountainhacksteam.github.io/MountainHacks2023" target="_blank">2023</a>
+                </h1>
+                <div class="banner-bg-effect banner-bg-img faint" style="background-image: url(./assets/camera/group_pic_2023.jpg);"></div>
+                <br>
+                <br>
+                <br>
+            </div>
+
+
+            <div class="section">
+                <h1 class="section-title center-text desc-font">
+                    <span style="font-size: 50%">What are you waiting for?</span><br>
+                    Sign up at the top!
+                </h1>
+                <br>
+                <br>
+                <p class="center-text section-title no-margin">MountainHacks</p>
+                <div class="flex-row">
+                    <p>Contact:&nbsp;</p>
+                    <p><a class="link" href="mailto:1072927@lammersvilleusd.net" target="_blank">1072927@lammersvilleusd.net</a></p>
+                    <div class="button small-btn" data-copy-text="1072927@lammersvilleusd.net" onclick="copyBtnClicked(this)"><ion-icon name="copy"></ion-icon><p>copy</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/personCardLoader.js"></script>
+    <script src="js/sponsorLoader.js"></script>
+    <script src="js/faqLoader.js"></script>
+
+    <script src="js/lib/three.min.js"></script>
+    <script src="js/stars.js"></script>
 </body>
 
 </html>
