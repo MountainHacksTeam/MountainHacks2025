@@ -38,6 +38,109 @@ a, button {
     cursor: pointer;
 }
 
+.banner-content {
+    font-family: var(--desc-font), var(--fonts);
+    width: 60%;
+    max-width: 1200px;
+    background-color: rgba(18, 37, 94, 0.9); /* Adjust the alpha (0.9 for slight translucency) */
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    height: 100%; /* Makes the table full-height */
+}
+
+
+td {
+    vertical-align: top;
+    padding: 20px;
+}
+
+
+.left-section {
+    text-align: left;
+    padding-left: 60px;
+}
+
+
+.left-section img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+
+.info-item img {
+    margin-right: 10px;
+}
+
+
+.right-section {
+    text-align: left;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Space items evenly from top to bottom */
+    height: 90%; /* Makes the right section match the height of the left section */
+}
+
+
+.link-item {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+
+.link-item img {
+    margin-right: 10px;
+}
+
+
+.link-item:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+
+    td {
+        padding: 10px;
+    }
+
+
+    .right-section {
+        justify-content: flex-start; /* Avoid stretching on small screens */
+    }
+}
+
 a.link {
     display: inline-block;
     border: solid 1px #afd7fd;
