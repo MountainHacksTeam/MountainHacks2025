@@ -1,13 +1,32 @@
 [
     {
-        "name": "HCB",
-        "desc": "MountainHacks is fiscally sponsored by HackClub!",
-        "img": "./data/assets/sponsors/hcb.png",
-        "url": "https://hackclub.com/fiscal-sponsorship/"
+        "name": "gen.xyz",
+        "img": "data/assets/sponsors/genxyz.png",
+        "url": "https://gen.xyz/"
     },
     {
-        "name": "etc",
-        "img": "",
-        "url": ""
+        "name": "Desmos",
+        "img": "data/assets/sponsors/desmos.png",
+        "url": "https://www.desmos.com/"
+    },
+    {
+        "name": "Interview Cake",
+        "img": "./data/assets/sponsors/interviewcake.png",
+        "url": "https://www.interviewcake.com/"
+    },
+    {
+        "name": "Sticker Ninja",
+        "img": "./data/assets/sponsors/stickerninja.png",
+        "url": "https://stickerninja.com/"
+    },
+    {
+        "name": "Wolfram Research",
+        "img": "./data/assets/sponsors/wolfram.png",
+        "url": "https://www.wolfram.com/"
+    },
+    {
+        "name": "Sponsor Us!",
+        "desc": "We're still getting sponsorships!",
+        "img": ""
     }
 ]

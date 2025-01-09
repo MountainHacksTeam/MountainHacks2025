@@ -451,6 +451,10 @@ hr {
     width: 100%;
 }
 
+.banner-info-card-container.row {
+    flex-direction: row;
+}
+
 .banner-info-card {
     display: flex;
     flex-direction: row;
@@ -458,15 +462,24 @@ hr {
     justify-content: center;
     text-shadow: 0px 0px 10px #000000;
     margin: 5px;
+    text-wrap: nowrap;
 }
 
 .banner-info-card:hover {
     text-shadow: 0px 0px 10px #ffffff66;
 }
 
+.banner-info-card:hover ion-icon {
+    filter: drop-shadow(0px 0px 10px #ffffff66);
+}
+
 .banner-info-card ion-icon {
     font-size: 2rem;
     margin-right: 5px;
+}
+
+.banner-info-card.big ion-icon {
+    font-size: 5rem;
 }
 
 .banner-info-card h2 {
@@ -507,6 +520,118 @@ hr {
 
 .banner-bg-effect.faint {
     opacity: 0.35;
+}
+
+.banner-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+}
+
+.banner-mtn-img {
+    filter: drop-shadow(0px 0px 20px #ffffff88);
+}
+
+.banner-mtn-hacks-2025-text-container {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.banner-mtn-hacks-text {
+    font-size: 320%;
+    font-weight: 200;
+}
+
+.banner-2025-text {
+    font-size: 800%;
+    font-weight: 900;
+}
+
+.banner-mtn-hacks-text, .banner-2025-text {
+    filter: drop-shadow(0px 0px 10px #00000066);
+}
+
+.banner-2025-text, .banner-mtn-hacks-text {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#a1deff, #1db0ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 80%;
+}
+
+.banner-side {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.banner-side.left {
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* perspective-origin: 00%; */
+}
+
+.banner-side.left, .banner-side.right {
+    perspective: 200px;
+}
+
+.banner-side.left>* {
+    transform: rotateY(5deg);
+}
+
+.banner-side.right>* {
+    transform: rotateY(-5deg);
+}
+
+.banner-sign-up-btn {
+    display: block;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: transparent;
+    background-image: linear-gradient(to right, #00456d, #007bbd);
+    box-shadow: #00000066 0px 0px 10px;
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.banner-sign-up-btn:hover {
+    transform: scale(1.1);
+    filter: brightness(1.5);
+}
+
+.banner-sign-up-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); /* Shine color */
+    transform: skewX(-20deg);
+    transition: left 0.5s ease-in-out;
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+}
+
+.banner-sign-up-btn:hover::before {
+    left: 120%;
+}
+
+.banner-sign-up-btn * {
+    margin: 0;
+    padding: 0;
 }
 
 #down-arrow-container {
@@ -997,6 +1122,40 @@ p.section-title {
 }
 
 @media (max-width: 900px) {
+    .banner-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-mtn-hacks-2025-text-container {
+        margin-top: -50px;
+        margin-bottom: 7px;
+    }
+
+    .banner-mtn-img {
+        opacity: 0.6;
+    }
+
+    .banner-side.left, .banner-side.right {
+        perspective: 0px;
+    }
+
+    .banner-side.left>* {
+        transform: none;
+    }
+
+    .banner-side.right>* {
+        transform: none;
+    }
+
+    .banner-sign-up-btn {
+        padding: 10px;
+        width: fit-content;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     .banner-info-card {
         border-radius: 8px;
         min-width: initial;
@@ -1004,7 +1163,10 @@ p.section-title {
         font-size: 75%;
     }
     .banner-info-card ion-icon {
-        /* font-size: ; */
+        font-size: 1.5rem;
+    }
+    .banner-info-card .flex-row {
+        flex-direction: column;
     }
     .banner-info-card h1 {
         font-size: 150%;
@@ -1057,5 +1219,17 @@ p.section-title {
 
     .section>h1.section-title {
         font-size: 200%;
+    }
+
+    .socials-container {
+        left: 2px;
+        bottom: 2px;
+        flex-direction: column;
+    }
+
+    .social {
+        margin: 4px;
+        width: 30px;
+        height: 30px;
     }
 }

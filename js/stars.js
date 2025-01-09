@@ -69,7 +69,6 @@ function onWindowResize() {
 }
 var frame = 0;
 function animate() {
-    console.log("animating stars");
     if (zoomEffectEnabled) {
         starGeo.vertices.forEach(p => {
             p.y -= starSpeed;
