@@ -885,6 +885,14 @@ p.section-title {
     margin: 0;
 }
 
+.card.info img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
 .cards-container.sponsor {
     width: fit-content;
     border: solid 3px #65b5ff55;
