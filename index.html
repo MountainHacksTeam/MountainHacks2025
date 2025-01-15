@@ -58,61 +58,6 @@
 
     <div class="main-content">
         <div class="banner">
-            <div class="banner-content" style="display: none">
-
-                <table>
-                    <tr>
-                        <!-- Left Cell -->
-                        <td class="left-section">
-                            <img src="assets/img/mountainhacks_2025(web) copy.png" alt="Mountain Hacks Logo">
-                            <div class="title">MOUNTAIN HACKS 2025</div>
-                            <div class="info-item">
-                                <ion-icon name="location"></ion-icon>
-                                Mountain House High School
-                            </div>
-                            <div class="info-item">
-                                <ion-icon name="calendar"></ion-icon>
-                                April 18, 2025
-                            </div>
-                            <div class="info-item">
-                                <ion-icon name="time"></ion-icon>
-                                7:00 AM - 10:00 PM
-                            </div>
-                        </td>
-
-
-                        <!-- Right Cell -->
-                        <td class="right-section">
-                            <a href="#" class="link-item">
-                                <img src="slack-icon.png" alt="">
-                                Slack
-                            </a>
-                            <a href="#" class="link-item">
-                                <img src="devpost-icon.png" alt="">
-                                Devpost
-                            </a>
-                            <a href="#" class="link-item">
-                                <img src="youtube-icon.png" alt="">
-                                YouTube
-                            </a>
-                            <a href="#" class="link-item">
-                                <img src="instagram-icon.png" alt="">
-                                Instagram
-                            </a>
-                            <a href="#" class="link-item">
-                                <img src="github-icon.png" alt="">
-                                GitHub
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-
-                    <!-- <a target="_blank" class="banner-quick-link button fancy-btn big-btn" id="banner-sign-up-btn" disabled>
-                        <h1>SIGN UP</h1>
-                        <p>OPENS VERY SOON!</p>
-                    </a> -->
-            </div>
-
             <div class="banner-flex">
                 <div class="banner-side left">
                     <img class="banner-mtn-img" src="assets/img/mountain_hacks_logo_mountain_only.png"/>
@@ -163,9 +108,7 @@
             <div class="banner-bg-effect" id="stars-canvas-container">
                 <canvas width="100%" height="100%" id="stars-canvas"></canvas>
             </div>
-            <div class="banner-bg-effect" id="down-arrow-container">
-                <h1 id="down-arrow-effect" onclick="scrollToContent()">↓</h1>
-            </div>
+            <h1 id="down-arrow-effect" onclick="scrollToContent()">↓</h1>
         </div>
 
         <div class="socials-container">
@@ -181,21 +124,22 @@
                     <div class="big-num-container desc-font">
                         <div class="big-num-card">
                             <h1>
-                                <span class="big-num-anim">99999</span>
+                                <span class="big-num-anim">150</span>+
                             </h1>
                             <p class="section-description">HACKERS</p>
                         </div>
                         <div class="big-num-card">
                             <h1>
-                                <span class="big-num-anim">99999</span>
+                                <span class="big-num-anim">14</span>
                             </h1>
                             <p class="section-description">HOUR HACKATHON</p>
                         </div>
                         <div class="big-num-card">
                             <h1>
-                                $<span class="big-num-anim">99999</span>
+                                <!-- $<span class="big-num-anim">99999</span> -->
+                                TBD
                             </h1>
-                            <p class="section-description">IN PRIZES</p>
+                            <p class="section-description">IN PRIZES & DEV TOOLS</p>
                         </div>
                         <br>
                         <!-- <div class="big-num-card">
@@ -270,7 +214,7 @@
                     SPONSORS
                 </h1>
                 <p class="center-text">
-                    Sponsors make MountainHacks possible!
+                    Thank you to the sponsors, who make MountainHacks possible!
                 </p>
                 <h3 class="center-text">
                     To sponsor MountainHacks, please contact the email at the bottom of the page.
@@ -293,7 +237,7 @@
                 </div>
             </div>
 
-            <div class="section">
+            <div class="section hidden">
                 <h1 class="section-title center-text">
                     ORGANIZERS
                 </h1>
@@ -410,7 +354,7 @@
             <div class="section">
                 <h1 class="section-title center-text desc-font">
                     <span style="font-size: 50%">What are you waiting for?</span><br>
-                    Sign up at the top!
+                    <a onclick="window.scroll({top:0,left:0,behavior:'smooth'})">Sign up at the top!</a>
                 </h1>
                 <br>
                 <br>
@@ -425,7 +369,7 @@
     </div>
 
     <script src="js/script.js"></script>
-    <script src="js/personCardLoader.js"></script>
+    <!-- <script src="js/personCardLoader.js"></script> will be uncommented when organizers completed adding descriptions -->
     <script src="js/sponsorLoader.js"></script>
     <script src="js/faqLoader.js"></script>
 

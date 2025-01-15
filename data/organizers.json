@@ -2,7 +2,7 @@
     {
         "name": "Akshat Sehgal",
         "role": "LEAD\nLogistics/Dev/Marketing",
-        "desc": "to update desc",
+        "desc": "Senior @ MHHS; Enjoy electronics, coding, hackathons, 3D printing, and camping! Been to 15+ hackathons and won several prizes. Officer of Hackathon, Circuitry, and Robotics Club, and part of VEX robotics. Excited to lead MountainHacks 2025!",
         "img": "./data/assets/organizers/akshat.JPG",
         "socials": {
             "instagram": "https://instagram.com/the_akze",
@@ -51,6 +51,15 @@
         "img": "./data/assets/organizers/ishita.jpg",
         "socials": {
             "instagram": "https://www.instagram.com/ishda_25/"
+        }
+    },
+    {
+        "name": "Ansh Suba",
+        "role": "??",
+        "desc": "Sophomore @ Mountain House High School with aspirations in machine learning. Experienced hackathon participant with a passion for coding and problem-solving. Apart from coding, I enjoy playing soccer, hiking, and photography. Always eager to learn new skills and excited for MountainHacks 2025!",
+        "img": "./data/assets/organizers/ansh.jpg",
+        "socials": {
+            "instagram": "https://www.instagram.com/ansh.suba"
         }
     },
     {
