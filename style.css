@@ -1132,6 +1132,70 @@ p.section-title {
     border-color: #ffffff88;
 }
 
+.alert-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    pointer-events: none;
+}
+
+.alert {
+    background-color: #00000055;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    animation: alert-animation 0.5s ease-in-out 0s 2 forwards;
+    box-shadow: 0px 0px 10px #00000055;
+}
+
+.alert ion-icon {
+    margin-right: 5px;
+}
+
+.alert .alert-text {
+    margin: 0;
+}
+
+.alert .alert-close {
+    content: "×";
+    font-size: larger;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #00000088;
+    border-radius: 8px;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.alert .alert-close:hover {
+    background-color: #22222288;
+}
+
+@keyframes alert-animation {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+        background-color: #22222255;
+    }
+}
+
 @media (max-width: 900px) {
     .banner-flex {
         flex-direction: column;

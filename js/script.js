@@ -116,3 +116,15 @@ function copyBtnClicked(element) {
 function scrollToSection(section) {
     document.querySelector("[data-section=" + section + "]").scrollIntoView({behavior: "smooth", block: "nearest"});
 }
+
+addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".alert-close").forEach((element, key) => {
+        element.addEventListener("click", ev => {
+            ev.currentTarget.parentElement.style.display = "none";
+        })
+    });
+
+    if (Date.now() > 1744441199000) {
+        document.getElementById("reschedule-alert").style.display = "none";
+    }
+})
