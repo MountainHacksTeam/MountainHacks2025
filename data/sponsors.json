@@ -45,16 +45,6 @@
         "url": "https://artofproblemsolving.com/"
     },
     {
-        "name": "Taskade",
-        "img": "./data/assets/sponsors/taskade.png",
-        "url": "https://www.taskade.com/"
-    },
-    {
-        "name": "Echo3D",
-        "img": "./data/assets/sponsors/echo3d.jpg",
-        "url": "https://www.echo3d.com/"
-    },
-    {
         "name": "Sponsor Us!",
         "desc": "We're still getting sponsorships!",
         "img": ""
