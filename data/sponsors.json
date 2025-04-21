@@ -1,5 +1,10 @@
 [
     {
+        "name": "HCB",
+        "img": "data/assets/sponsors/hcb.png",
+        "url": "https://gen.xyz/"
+    },
+    {
         "name": "gen.xyz",
         "img": "data/assets/sponsors/genxyz.png",
         "url": "https://gen.xyz/"
@@ -23,6 +28,31 @@
         "name": "Wolfram Research",
         "img": "./data/assets/sponsors/wolfram.png",
         "url": "https://www.wolfram.com/"
+    },
+    {
+        "name": "CoCalc",
+        "img": "./data/assets/sponsors/cocalc.png",
+        "url": "https://cocalc.com/"
+    },
+    {
+        "name": "NordVPN",
+        "img": "./data/assets/sponsors/nordvpn.png",
+        "url": "https://nordvpn.com/"
+    },
+    {
+        "name": "Art of Problem Solving",
+        "img": "./data/assets/sponsors/aops.png",
+        "url": "https://artofproblemsolving.com/"
+    },
+    {
+        "name": "Taskade",
+        "img": "./data/assets/sponsors/taskade.png",
+        "url": "https://www.taskade.com/"
+    },
+    {
+        "name": "Echo3D",
+        "img": "./data/assets/sponsors/echo3d.jpg",
+        "url": "https://www.echo3d.com/"
     },
     {
         "name": "Sponsor Us!",
