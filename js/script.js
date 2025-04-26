@@ -117,6 +117,8 @@ function scrollToSection(section) {
     document.querySelector("[data-section=" + section + "]").scrollIntoView({behavior: "smooth", block: "nearest"});
 }
 
+const submissionsDue = 1745715600000;
+
 addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".alert-close").forEach((element, key) => {
         element.addEventListener("click", ev => {
@@ -130,5 +132,29 @@ addEventListener("DOMContentLoaded", () => {
 
     if (Date.now() > 1745672400000) {
         document.getElementById("online-alert").style.display = "none";
+    }
+
+    if (Date.now() > 1745717400000) {
+        document.getElementById("countdown-alert").style.display = "none";
+    }
+    else {
+        setInterval(() => {
+            let countdownElem = document.getElementById("countdown-time");
+            let timeRemaining = submissionsDue - Date.now();
+            console.log(timeRemaining);
+            if (timeRemaining <= 0) {
+                countdownElem.innerText = "HACKING PERIOD IS OVER!"
+            }
+            else {
+                let seconds = Math.floor((timeRemaining / 1000) % 60);
+                let minutes = Math.floor((timeRemaining / 1000 / 60) % 60);
+                let hours = Math.floor((timeRemaining / 1000 / 60 / 60));
+                let timeStr =
+                    (hours >= 1 ? `${hours}h ` : "") +
+                    (minutes >= 1 ? `${minutes}m ` : "") +
+                    (seconds >= 1 ? `${seconds}s ` : "");
+                countdownElem.innerText = timeStr;
+            }
+        }, 250);
     }
 })

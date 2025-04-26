@@ -1185,6 +1185,10 @@ p.section-title {
     background-color: #22222288;
 }
 
+#countdown-alert {
+    font-size: larger;
+}
+
 @keyframes alert-animation {
     0%, 100% {
         transform: scale(1);
