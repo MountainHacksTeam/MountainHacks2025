@@ -127,4 +127,8 @@ addEventListener("DOMContentLoaded", () => {
     if (Date.now() > 1744441199000) {
         document.getElementById("reschedule-alert").style.display = "none";
     }
+
+    if (Date.now() > 1745672400000) {
+        document.getElementById("online-alert").style.display = "none";
+    }
 })
