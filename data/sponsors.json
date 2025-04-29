@@ -2,7 +2,7 @@
     {
         "name": "HCB",
         "img": "data/assets/sponsors/hcb.png",
-        "url": "https://gen.xyz/"
+        "url": "https://hackclub.com/fiscal-sponsorship/"
     },
     {
         "name": "gen.xyz",
@@ -42,17 +42,17 @@
     {
         "name": "Incogni",
         "img": "./data/assets/sponsors/incogni.png",
-        "url": "https://nordvpn.com/hackathons"
+        "url": "https://incogni.com/"
     },
     {
         "name": "NordPass",
         "img": "./data/assets/sponsors/nordpass.png",
-        "url": "https://nordvpn.com/hackathons"
+        "url": "https://nordpass.com/"
     },
     {
         "name": "Saily",
         "img": "./data/assets/sponsors/saily.png",
-        "url": "https://nordvpn.com/hackathons"
+        "url": "https://saily.com/"
     },
     {
         "name": "Art of Problem Solving",
