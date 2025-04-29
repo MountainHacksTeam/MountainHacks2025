@@ -40,13 +40,23 @@
         "url": "https://nordvpn.com/hackathons"
     },
     {
+        "name": "Incogni",
+        "img": "./data/assets/sponsors/incogni.png",
+        "url": "https://nordvpn.com/hackathons"
+    },
+    {
+        "name": "NordPass",
+        "img": "./data/assets/sponsors/nordpass.png",
+        "url": "https://nordvpn.com/hackathons"
+    },
+    {
+        "name": "Saily",
+        "img": "./data/assets/sponsors/saily.png",
+        "url": "https://nordvpn.com/hackathons"
+    },
+    {
         "name": "Art of Problem Solving",
         "img": "./data/assets/sponsors/aops.png",
         "url": "https://artofproblemsolving.com/"
-    },
-    {
-        "name": "Sponsor Us!",
-        "desc": "We're still getting sponsorships!",
-        "img": ""
     }
 ]

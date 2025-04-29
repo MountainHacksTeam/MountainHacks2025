@@ -934,7 +934,7 @@ p.section-title {
 .card.sponsor img {
     pointer-events: none;
     width: 100%;
-    /* aspect-ratio: 1; */
+    aspect-ratio: 1;
     border-radius: 20px;
     object-fit: contain;
 }
